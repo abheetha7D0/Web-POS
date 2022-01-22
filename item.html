@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>POS</title>
-  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-2">
@@ -29,6 +29,60 @@
         </div>
     </div>
 </nav>
+<section class="p-2">
+    <h2>Item</h2>
+    <div>
+        <div class="p-2 d-flex justify-content-between bg-dark text-white">
+            <div>Item Search</div>
+            <div class="d-flex justify-content-end">
+                <div>
+                    <button class="btn btn-outline-light" data-bs-target="#AddItem" data-bs-toggle="modal"
+                            type="button">Add Item
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div aria-hidden="true" aria-labelledby="AddItemLabel" class="modal fade" data-bs-backdrop="static"
+             data-bs-keyboard="false"
+             id="AddItem" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="AddItemLabel">Add Item</h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-12">
+                                <label for="inputCode" class="form-label">Code</label>
+                                <input type="text" class="form-control" id="inputCode">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputPrice" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputPrice">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputQuantity" class="form-label">Salary</label>
+                                <input type="text" class="form-control" id="inputQuantity">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
