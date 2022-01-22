@@ -35,12 +35,21 @@
         <div class="p-2 d-flex justify-content-between bg-dark text-white">
             <div>Item Search</div>
             <div class="d-flex justify-content-end">
+                <div >
+                    <button class=" btn btn-outline-light" data-bs-target="#UpdateItem" data-bs-toggle="modal"
+                            type="button">Update Customer
+                    </button>
+                </div>
                 <div>
                     <button class="btn btn-outline-light" data-bs-target="#AddItem" data-bs-toggle="modal"
                             type="button">Add Item
                     </button>
                 </div>
-
+                <div>
+                    <button class="btn btn-outline-light" data-bs-target="#ViewAllItem" data-bs-toggle="modal"
+                            type="button">Add Item
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -69,7 +78,7 @@
                                 <input type="text" class="form-control" id="inputPrice">
                             </div>
                             <div class="col-12">
-                                <label for="inputQuantity" class="form-label">Salary</label>
+                                <label for="inputQuantity" class="form-label">Quantity</label>
                                 <input type="text" class="form-control" id="inputQuantity">
                             </div>
                         </form>
@@ -77,6 +86,94 @@
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
                         <button class="btn btn-primary" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div aria-hidden="true" aria-labelledby="UpdateItemLabel" class="modal fade" data-bs-backdrop="static"
+             data-bs-keyboard="false"
+             id="UpdateItem" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="UpdateItemLabel">Add Item</h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-12">
+                                <label for="inputCode" class="form-label">Code</label>
+                                <input type="text" class="form-control" id="inputUCode">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputUName">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputPrice" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputUPrice">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputQuantity" class="form-label">Quantity</label>
+                                <input type="text" class="form-control" id="inputUQuantity">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-warning" type="button">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div aria-hidden="true" aria-labelledby="viewAllItemLabel" class="modal fade" data-bs-backdrop="static"
+             data-bs-keyboard="false"
+             id="ViewAllItem" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewAllItemLabel">Customers</h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">I001</th>
+                                <td>Rice</td>
+                                <td>160/=</td>
+                                <td>1KG</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">I002</th>
+                                <td>Potato</td>
+                                <td>100/=</td>
+                                <td>500g</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">I003</th>
+                                <td>Tomato</td>
+                                <td>90/=</td>
+                                <td>500g</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+
                     </div>
                 </div>
             </div>
