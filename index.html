@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <title>POS</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        #navbar{
-            width: 99vw;
-            z-index: 100;
-            position: fixed;
-        }
 
-    </style>
 </head>
 <body>
 <section>
@@ -39,7 +32,7 @@
         </div>
     </nav>
     <!----------------------------Start-customer------------------------------------------------->
-    <section class="row py-1" id="customer">
+    <section class="p-2" id="customer">
         <h2 >Customer</h2>
         <div>
             <div class="p-2 d-flex justify-content-between bg-dark text-white">
@@ -600,7 +593,8 @@
     </section>
    <!----------------------------End-Customer------------------------------------------------->
 </section>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
     document.getElementById("btnCustomer").addEventListener("click",function (){
         document.getElementById("customer").style.display="block";
         document.getElementById("item").style.display="none";
