@@ -61,7 +61,8 @@
                 <div class="col-6">
                     <label for="inputSearchCust" class="form-label">Search</label>
                     <input type="search" class="form-control" id="inputSearchCust">
-                </div>
+
+                </div> <button class=" btn btn-primary" id="btnSearch" type="button" >Save</button>
             </div>
 
         </div>
@@ -78,26 +79,30 @@
                         <div class="modal-body">
                             <form class="row g-3">
                                 <div class="col-12">
-                                    <label for="inputId" class="form-label">Id</label>
-                                    <input type="text" class="form-control" id="inputId">
+                                    <label for="inputCusId" class="form-label">Id</label>
+                                    <input type="text" class="form-control" id="inputCusId" placeholder="Customer ID">
+                                    <p><small class="text-danger pl-1" id="lblCusId"></small></p>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputCustomerName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="inputCustomerName">
+                                    <input type="text" class="form-control" id="inputCustomerName" placeholder="Customer Name">
+                                    <p><small class="text-danger pl-1" id="lblCusName"></small></p>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress">
+                                    <label for="inputCusAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputCusAddress" placeholder="Customer Address">
+                                    <p><small class="text-danger pl-1" id="lblCusAddress"></small></p>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputSalary" class="form-label">Salary</label>
-                                    <input type="text" class="form-control" id="inputSalary">
+                                    <label for="inputCusSalary" class="form-label">Salary</label>
+                                    <input type="text" class="form-control" id="inputCusSalary" placeholder="Customer Salary">
+                                    <p><small class="text-danger pl-1" id="lblCusSalary"></small></p>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Save</button>
+                            <button class="btn btn-primary" type="button" id="btnCusSave">Save</button>
                         </div>
                     </div>
                 </div>
@@ -201,25 +206,9 @@
                     <th scope="col">Salary</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">C001</th>
-                    <td>Abheetha</td>
-                    <td>Moragalla</td>
-                    <td>65000/=</td>
-                </tr>
-                <tr>
-                    <th scope="row">C002</th>
-                    <td>Dilushan</td>
-                    <td>Beruwala</td>
-                    <td>35000/=</td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>Wishwa</td>
-                    <td>Kaluthara</td>
-                    <td>25000/=</td>
-                </tr>
+                <tbody id="customerTable">
+
+
                 </tbody>
             </table>
         </div>
@@ -591,9 +580,12 @@
             </table>
         </div>
     </section>
-   <!----------------------------End-Customer------------------------------------------------->
+   <!----------------------------End-Order------------------------------------------------->
 </section>
+
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="db/DB.js"></script>
 <script>
     document.getElementById("btnCustomer").addEventListener("click",function (){
         document.getElementById("customer").style.display="block";
@@ -610,6 +602,7 @@
         document.getElementById("item").style.display="none";
         document.getElementById("customer").style.display="none";
     })
+
 </script>
 </body>
 </html>
