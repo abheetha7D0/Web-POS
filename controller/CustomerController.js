@@ -21,6 +21,7 @@ function saveCustomer() {
     var salary = $("#txtCusSalary").val();
 
     customerDB.push(new CustomerDTO(id, name, address, salary));
+
 }
 
 function deleteCustomer(id) {
@@ -78,9 +79,9 @@ function searchCustomerFromID(typedCustomerID) {
 $("#btnCusSave").click(function () {
 
     saveCustomer();
-
-    loadAllCustomers();
     $("#inputCusId,#inputCustomerName,#inputCusAddress,#inputCusSalary").val("");
+    loadAllCustomers();
+
 });
 
 $("#btnCusDelete").click(function () {
