@@ -78,27 +78,27 @@
                         <div class="modal-body">
                             <form class="row g-3">
                                 <div class="col-12">
-                                    <label for="inputCusId" class="form-label">Id</label>
-                                    <input type="text" class="form-control" id="inputCusId" placeholder="Customer ID">
+                                    <label for="txtCusID" class="form-label">Id</label>
+                                    <input type="text" class="form-control" id="txtCusID" placeholder="Customer ID">
                                     <p><small class="text-danger pl-1" id="lblCusId"></small></p>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputCustomerName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="inputCustomerName"
+                                    <label for="txtCusName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="txtCusName"
                                            placeholder="Customer Name">
-                                    <p><small class="text-danger pl-1" id="lblCusName"></small></p>
+                                    <p><small class="text-danger pl-1" id="lblcusname"></small></p>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputCusAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputCusAddress"
+                                    <label for="txtCusAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="txtCusAddress"
                                            placeholder="Customer Address">
-                                    <p><small class="text-danger pl-1" id="lblCusAddress"></small></p>
+                                    <p><small class="text-danger pl-1" id="lblcusaddress"></small></p>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputCusSalary" class="form-label">Salary</label>
-                                    <input type="text" class="form-control" id="inputCusSalary"
+                                    <label for="txtCusSalary" class="form-label">Salary</label>
+                                    <input type="text" class="form-control" id="txtCusSalary"
                                            placeholder="Customer Salary">
-                                    <p><small class="text-danger pl-1" id="lblCusSalary"></small></p>
+                                    <p><small class="text-danger pl-1" id="lblcussalary"></small></p>
                                 </div>
                             </form>
                         </div>
@@ -193,9 +193,9 @@
             <div class="p-3 mb-2 bg-light text-dark">
                 <div class="col-6">
                     <div class="mb-3">
-                    <label for="btnSearchItem" class="form-label">Search</label>
-                    <input type="search" class="form-control" id="btnSearchItem">
-                        </div>
+                        <label for="btnSearchItem" class="form-label">Search</label>
+                        <input type="search" class="form-control" id="btnSearchItem">
+                    </div>
                 </div>
                 <button class=" btn btn-primary" id="btnItemSearch" type="button">Search</button>
                 <button class=" btn btn-primary" id="btnItemDelete" type="button">Delete</button>
@@ -218,18 +218,22 @@
                                 <div class="col-12">
                                     <label for="inputCode" class="form-label">Code</label>
                                     <input type="text" class="form-control" id="inputCode">
+                                    <p><small id="ItemCodeError" class="text-danger pl-1"></small></p>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputItemName" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="inputItemName">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputPrice" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputPrice">
+                                    <p><small id="ItemNameError" class="text-danger pl-1"></small></p>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputQuantity" class="form-label">Quantity</label>
                                     <input type="text" class="form-control" id="inputQuantity">
+                                    <p><small id="ItemQTYError" class="text-danger pl-1"></small></p>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPrice" class="form-label">Price</label>
+                                    <input type="text" class="form-control" id="inputPrice">
+                                    <p><small id="ItemPriceError" class="text-danger pl-1"></small></p>
                                 </div>
                             </form>
                         </div>
