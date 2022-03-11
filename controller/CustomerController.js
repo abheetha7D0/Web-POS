@@ -269,4 +269,4 @@ function setButton() {
 $('#btnCustomer').click(function () {
     checkIfValid();
 });
-//validation ended
+

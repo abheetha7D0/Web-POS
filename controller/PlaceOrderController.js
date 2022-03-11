@@ -115,7 +115,7 @@ function placeOrder() {
 
     if(saveOrder()){
         for (var i of cartDB){
-            orderDetailsDb.push(new OrderDetailsDTO(i.getCartOID(),i.getcartICode(),i.getcartIPrice(),i.getcartOQty(),i.getTotal()));
+            orderDetailsDB.push(new OrderDetailsDTO(i.getCartOID(),i.getcartICode(),i.getcartIPrice(),i.getcartOQty(),i.getTotal()));
 
         }
         alert("Successfull")
